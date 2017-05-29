@@ -1,0 +1,115 @@
+# Thermostat settings
+climate.living_roomboxnest:
+  friendly_name: Nest
+  max_temp: 78              # Adjust the maxium temperature that can be set for th nest
+  unit_of_measurement: '°F'
+
+# .:: Devices ::.
+device_tracker.wwam04043356:
+  friendly_name: Work Laptop
+  entity_picture: http://pre00.deviantart.net/0e87/th/pre/i/2014/232/9/f/captain_eo_logo__disney_style__by_thelastdisneytoon-d7vzwzy.jpg
+device_tracker.phoney:
+  friendly_name: 'Phoney'
+  icon: 'mdi:cellphone-iphone'
+device_tracker.thermostatboxhous:
+  friendly_name: Thermostat
+  entity_picture: http://www.wink.com/img/product/nest-learning-thermostat/variants/854448003037/hero_01.png
+  icon: 'mdi:nest-thermostat'
+device_tracker.emilys_iphone:
+  friendly_name: Emily
+  entity_picture: 'https://scontent.ftpa1-2.fna.fbcdn.net/v/t1.0-9/13529046_10200696941523053_457746445870531840_n.jpg?oh=05e77f9884b725a5a7e45003d781ce5d&oe=583A0B05'
+device_tracker.rorysiphone:
+  friendly_name: 'Rory iPhone'
+  icon: 'mdi:cellphone-iphone'
+device_tracker.lappy:
+  icon: 'mdi:laptop-mac'
+device_tracker.ericsapplewatch:
+  icon: 'mdi:watch'
+device_tracker.boxpadmini:
+  icon: 'mdi:tablet-ipad'
+device_tracker.20c9d0b0b743:
+  friendly_name: 'Rorys Macbook'
+  icon: 'mdi:laptop-mac'
+device_tracker.urtqwkbs_phoney:
+  friendly_name: 'Phoney'
+
+# .:: Lights ::.
+light.ge_12724_3way_dimmer_switch_level_2_0:
+  friendly_name: 'Over Stove'
+light.ge_12724_3way_dimmer_switch_level_3_0:
+  friendly_name: 'Over Fridge'
+
+# .:: Groups ::.
+group.people_eric:
+  entity_picture: https://secure.gravatar.com/avatar/a5fd5e5de2f86f134c9fb2cb9b63d168
+group.people_rory:
+  entity_picture: 'https://scontent.ftpa1-2.fna.fbcdn.net/v/t1.0-9/13892191_10154454520807203_5708536807150540090_n.jpg?oh=90625dc6e989ddeb6c8d9ce7164fe596&oe=58782AE8'
+
+
+# .:: Inputs ::.
+input_boolean.sleepy_time_override:
+  icon: 'mdi:sleep-off'
+
+# .:: Sensors ::.
+sensor.living_roomboxnestlocal_ip:
+  friendly_name: IP
+sensor.living_roomboxnestmode:
+  friendly_name: Mode
+sensor.living_roomboxnesttemperature:
+  friendly_name: Inside Temp
+sensor.living_roomboxnesttemperature_2:
+  friendly_name: Outside Temp
+sensor.living_roomboxnesthumidity_2:
+  friendly_name: Outside Humdidity
+garage_door.primary:
+  friendly_name: Main
+binary_sensor.garage_door:
+  friendly_name: 'Status'
+
+# .:: Travels ::.
+
+sensor.eric_to_home:
+  friendly_name: 'Home'
+  icon: house-variant
+sensor.eric_to_maingate:
+  friendly_name: 'Maingate'
+  icon: castle
+sensor.eric_to_jerseys:
+  friendly_name: "Myke and Lisa's"
+  icon: radioactive
+sensor.eric_to_mco:
+  friendly_name: "MCO"
+  icon: airplane
+  
+
+
+# .:: Weather ::.
+sensor.pws_feelslike_f:
+  friendly_name: 'Feels Like'
+sensor.pws_temp_f:
+  friendly_name: 'Temperature'
+sensor.pws_relative_humidity:
+  friendly_name: 'Humidity'
+sensor.pws_weather:
+  friendly_name: 'Condition'
+sensor.pws_wind_dir:
+  friendly_name: 'Wind'
+
+
+# .:: Media ::.
+device_tracker.09b0dd259a:
+  friendly_name: "Onkyo"
+
+media_player.living_room_apple_tv:
+  friendly_name: "Living Room Apple TV"
+
+media_player.living_room_media:
+  friendly_name: "Media Center"
+
+media_player.erics_room_apple_tv:
+  friendly_name: "Eric's Room Apple TV"
+
+
+# .:: Darksky ::.
+sensor.dark_sky_minutely_summary:
+  friendly_name: "Brief:"

@@ -1,0 +1,7 @@
+# .:: Occupancy tracking ::.
+kitchen_lights:
+  name: "kitchen_lights"
+  view: no
+  entities:
+    - light.ge_12724_3way_dimmer_switch_level_2_0
+    - light.ge_12724_3way_dimmer_switch_level_3_0

@@ -1,0 +1,21 @@
+# - alias: hass_backup
+#   trigger:
+#     - platform: state
+#       entity_id: input_boolean.hass_backup
+#       from: "off"
+#       to: "on"
+#     - platform: time
+#       after: '03:30:00'
+#   condition: 
+#     - condition: time
+#       weekday:
+#         - sun
+#         - wed
+#   action:
+#     - service: notify.telegram
+#       data:
+#         title: ''
+#         message: 'Home Assistant is now backing up.'
+#     - service: shell_command.backup_hass
+#     - service: input_boolean.turn_off
+#       entity_id: input_boolean.hass_backup

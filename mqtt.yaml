@@ -1,0 +1,22 @@
+# broker: boxho.us
+# port: 1883
+# client_id: home-assistant-1
+# keepalive: 60
+# # embedded:
+# #   port: 1888
+
+
+# .:: Trying using localhost ::.
+# broker: '127.0.0.1'
+# port: 1883
+# client_id: home-assistant-1
+# keepalive: 60
+
+# .:: Cloud MQTT ::.
+
+broker: 'm10.cloudmqtt.com'
+port: 19214
+client_id: 'boxhouse'
+keepalive: 60
+username: 'urtqwkbs'
+password: 'fumcTP9ZujL7'

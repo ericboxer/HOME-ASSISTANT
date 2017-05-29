@@ -1,0 +1,40 @@
+
+# .:: NMAP ::.
+
+# Using the NMAP tracker to check presensce via IP address / MAC address
+- platform: nmap_tracker
+  hosts: 10.0.1.0/24
+
+# Number of minutes to not scan this device assuming it is home
+  home_interval: 5
+
+# Seconds to wait to mark someone as not home after not being seen. Useful for iOS devices that sleep wifi when not in active use
+# set to 5 minutes
+  consider_home: 480
+
+
+# .:: Locative ::.
+
+# - platform: locative
+
+
+# .:: BLE ::.
+
+# - platform: 'bluetooth_le_tracker'
+
+# .:: Owntracks ::.
+- platform: owntracks
+  max_gps_accuracy: 200
+  waypoints: True
+
+# # .:: Router Based ::.
+
+# - platform: asuswrt
+#   host: 10.0.1.1
+#   username: 'admin'
+#   password: 'Deahxob00'
+#   protocol: 'telnet'
+
+# - platform: ping
+#   hosts:
+#     hostone: 10.0.1.102

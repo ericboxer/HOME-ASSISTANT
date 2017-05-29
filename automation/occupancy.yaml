@@ -1,0 +1,13 @@
+# .:: Telegram whos home and who leaves. Credit: Dale3h ::.
+- alias: Occupant Presence Notification
+  trigger:
+    - platform: state
+      entity_id: group.people_eric, group.people_rory
+  condition:
+    - condition: template
+      value_template: "{{ trigger.from_state.state != trigger.to_state.state }}"
+  action:
+    - service: notify.telegram
+      data_template:
+        title: ''
+        message: "{{ trigger.from_state.attributes.friendly_name }} is {% if trigger.to_state.state == 'home' %}at home{% elif trigger.to_state.state == 'not_home' %}away{% else %}at {{ trigger.to_state.state }}{% endif %}."

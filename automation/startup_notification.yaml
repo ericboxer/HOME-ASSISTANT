@@ -1,0 +1,27 @@
+- alias: Store Startup Notification Status
+  trigger:
+    - platform: state
+      entity_id: input_boolean.startup_notification
+  # condition:
+    # - condition: template
+    #   value_template: "{{ not is_state('input_boolean.startup_notification', states('binary_sensor.override_startup_notification')) }}"
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: 'boxhouse/variable/startup_notification'
+        payload: "{{ states('input_boolean.startup_notification') }}"
+        retain: true
+        qos: 1
+
+- alias: Update Startup notficiation Status
+  trigger:
+    - platform: state
+      entity_id: sensor.override_startup_notification
+    - platform: event
+      event_type: homeassistant_start
+  condition:
+    - condition: template
+      value_template: "{{ not is_state('input_boolean.startup_notification', states('sensor.override_startup_notification')) }}"
+  action:
+    - service_template: "input_boolean.turn_{{ 'on' if is_state('sensor.override_startup_notification', 'on') else 'off' }}"
+      entity_id: input_boolean.startup_notification

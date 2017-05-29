@@ -1,0 +1,58 @@
+homeassistant:
+  name: 'BoxHouse'
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
+  elevation: 29
+  unit_system: imperial
+  time_zone: America/New_York
+  customize: !include customize.yaml
+
+config:
+
+frontend:
+http:
+  api_password: !secret http_password
+  ssl_certificate: !secret ssl_certificate
+  ssl_key: !secret ssl_key
+  
+  # trusted_networks: #!include 'trusted_networks.yaml'
+  #   - 10.0.1.0/16
+  #   - 127.0.0.1
+  #   - 10.0.1.101
+updater:
+discovery: # turned off to suggestion. Seems to cause more harm 
+conversation:
+history:
+logbook:
+zeroconf:
+sun:
+
+telegram_bot:
+  platform: 'webhooks'
+  api_key: !secret telegram_api_key
+  allowed_chat_ids:
+    - !secret telegram_chat_id
+
+# .:: Single Files ::.
+mqtt: !include 'mqtt.yaml'
+input_boolean: !include 'input_booleans.yaml'
+device_tracker: !include 'devicetracker.yaml'
+media_player: !include 'media_player.yaml'
+nest: !include 'nestconfig.yaml'
+notify: !include 'notify.yaml'
+google: !include 'google_config.yaml'
+# climate: !include 'climate.yaml'
+# camera: !include 'cameras.yaml'
+# hdmi_cec: !include 'hdmi_cec.yaml' Need more things installed
+zwave: !include 'zwave_config.yaml'
+zone: !include 'zones.yaml'
+
+# .:: Groups of Files ::.
+cover: !include_dir_merge_list 'cover'
+group: !include_dir_merge_named 'groups'
+automation: !include 'automations.yaml'
+automation old: !include_dir_merge_list 'automation'
+# scene: #!include_dir_merge_list 'scenes'
+# script: !include_dir_merge_list 'scripts'
+sensor: !include_dir_merge_list 'sensors'
+# shell_command: !include_dir_merge_named 'shell_commands'

@@ -1,0 +1,23 @@
+# General Timers
+
+- alias: 'Notify Dusk'
+  trigger:
+    platform: state
+    entity_id: input_boolean.dusk_trigger
+    from: 'off'
+    to: 'on'
+  action:
+    - service: notify.telegram
+      data:
+        message: "It's getting dark"
+
+- alias: 'Notify Dawn'
+  trigger:
+    platform: state
+    entity_id: input_boolean.dusk_trigger
+    from: 'on'
+    to: 'off'
+  action:
+    - service: notify.telegram
+      data:
+        message: "The sun is up"

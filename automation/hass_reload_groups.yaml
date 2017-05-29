@@ -1,0 +1,14 @@
+- alias: Reload_groups
+  trigger:
+    platform: state
+    entity_id: input_boolean.reload_groups
+    from: "off"
+    to: "on"
+  action:
+    - service: notify.telegram
+      data:
+        title: ''
+        message: 'Home Assistant is now reloading groups.'
+    - service: group.reload
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.reload_groups

@@ -1,0 +1,34 @@
+# .:: This is boxhouse ::.
+- name: Home
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
+  radius: 100
+  icon: mdi:home-outline
+
+# .:: This be Work ::.
+- name: Maingate
+  latitude: !secret latitude_maingate
+  longitude: !secret longitude_maingate
+  radius: 250
+  icon: mdi:castle
+
+# .:: Jersey and Lisas Place ::.
+- name: 'jersey'
+  latitude: !secret latitude_jersey_lisa
+  longitude: !secret longitude_jersey_lisa
+  radius: 100
+  icon: mdi:bullseye
+
+  # .:: This be Target ::.
+- name: Target 192
+  latitude: !secret latitude_target_192
+  longitude: !secret longitude_target_192
+  radius: 250
+  icon: mdi:bullseye
+
+# .:: MCO ::.
+- name: 'mco'
+  latitude: !secret latitude_mco
+  longitude: !secret longitude_mco
+  radius: 250
+  icon: mdi:bullseye

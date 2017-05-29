@@ -1,0 +1,11 @@
+# .:: Erics Devices Stats ::.
+people_eric:
+  name: 'Eric'
+  view: no
+  entities:
+    # - device_tracker.lappy
+    # - device_tracker.phoney
+    # - device_tracker.ericsapplewatch
+    # - device_tracker.boxpadmini
+    # - device_tracker.wwam0403356
+    - device_tracker.urtqwkbs_phoney

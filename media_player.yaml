@@ -1,0 +1,104 @@
+- platform: universal
+  name: Living_Room_Media
+  children:
+    - media_player.living_room_apple_tv
+    - media_player.cast
+  commands:
+    turn_on:
+      service: media_player.turn_on
+      data:
+        entity_id:
+          - media_player.living_room_tv
+    turn_off:
+      service: media_player.turn_off
+      data:
+        entity_id: 
+          - media_player.living_room_tv
+    select_source:
+      service: media_player.select_source
+      data_template:
+        entity_id: 
+          - media_player.living_room_onkyo
+        source: media_player.living_room_onkyo|source
+    volume_up:
+      service: media_player.volume_up
+      data: 
+        entity_id: 
+          - media_player.living_room_onkyo
+    volume_down:
+      service: media_player.volume_down
+      data: 
+        entity_id: 
+          - media_player.living_room_onkyo
+    volume_mute:
+      service: media_player.volume_mute
+      data: 
+        entity_id:
+          - media_player.living_room_tv
+    volume_set:
+        service: media_player.volume_set
+        data_template:
+          entity_id: media_player.living_room_tv
+          volume_level: ''
+  attributes:
+    state: media_player.living_room_onkyo
+    is_volume_muted: media_player.living_room_onkyo|is_volume_muted
+    volume_level: media_player.living_room_onkyo|volume_level
+    source: media_player.living_room_onkyo|source
+    source_list: media_player.living_room_onkyo|source_list
+
+    
+
+# .:: Living Room Setup ::.
+- platform: onkyo
+  host: !secret media_player_living_room
+  name: living_room_onkyo
+  sources:
+    cd: 'AppleTV'
+    video3: 'PS4'
+    video6: 'Boxho.us Server'
+    phono: 'Wii U'
+    fm: 'FM Radio'
+    am: 'AM Radio'
+    tuner: tuner
+    usb: 'USB'
+    network: 'Network Muisc'
+    # universal-port: universal-port
+    # multi-ch: multi-ch
+    # xm: xm
+    # sirius: sirius
+    # 1_1: AppleTV
+    # video1: video1
+    # video2: 'Cable Satalite'
+    # dlna: dlna
+    # internet-radio: internet-radio
+    # tv-cd: tv-cd
+    # video7: video7
+    # dvd: dvd
+    # bd-dvd: bd-dvd
+    # tape1: tape1
+    # tv-tape: tv-tape
+    # tape2: tape2
+    # video4: aux
+    # video5: video5
+
+
+- platform: braviatv
+  name: 'living_room_tv'
+  host: 10.0.1.216
+
+# AppleTVs
+
+- platform: apple_tv
+  name: 'living_room_apple_tv'
+  host: 10.0.1.14
+  login_id: 00000000-0353-6e34-f0d0-c34ae39b40a9
+
+- platform: apple_tv
+  name: 'erics_room_apple_tv'
+  host: 10.0.1.190
+  login_id: 00000000-0353-6e34-f0d0-c34ae39b40a9
+
+- platform: cast
+
+

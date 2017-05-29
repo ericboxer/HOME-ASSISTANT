@@ -1,0 +1,13 @@
+# - alias: Update Sleepy Time Status
+#   trigger:
+#     - platform: state
+#       entity_id: input_slider.sleepy_time_temperature
+#     - platform: event
+#       event_type: homeassistant_start
+#   condition:
+#     - condition: template
+#       value_template: "{{ not is_states('input_slider.sleepy_time_temperature', states('sensor.sleepy_time_temperature')) }}"
+#   action:
+#     - service: input_slider.select_value
+#       entity_id: input_slider.sleepy_time_temperature
+#       state: "{{ states('sensor.sleepy_time_temperature') }}"

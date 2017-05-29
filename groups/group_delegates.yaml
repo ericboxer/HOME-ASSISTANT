@@ -1,0 +1,5 @@
+# .:: Internet stats ::.
+delegates:
+  view: no
+  entities:
+    - input_boolean.dusk_trigger

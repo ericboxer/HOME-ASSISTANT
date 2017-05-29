@@ -1,0 +1,69 @@
+# .:: Views / Tabs at the top ::.
+default_view:
+  name: boxhouse
+  view: yes
+  entities:
+    - climate.living_room_boxnest
+    - camera.kitchen
+    - group.internet
+    - group.people
+    - group.environment
+    # - scene.no_one_home
+    # - group.system
+    - group.restarts
+    # - group.weather
+    # - group.people_eric
+    - group.darksky
+    # - configurator.nest
+    - calendar.eric_boxer
+    - calendar.planes_trains_and_automobiles
+    # - group.travel_times
+travel_times:
+  name: travel times
+  view: yes
+  entities:
+    - group.erics_travel_times
+garage:
+  name: Garage
+  view: yes
+  entities:
+    - cover.garage_door
+
+kitchen:
+  name: Kitchen
+  view: yes
+  entities:
+    - camera.kitchen
+    - light.ge_12724_3way_dimmer_switch_level_2_0
+    - light.ge_12724_3way_dimmer_switch_level_3_0
+    
+livingroom:
+  name: livingroom
+  view: yes
+  entities:
+    - media_player.Living_Room_Media
+    # - media_player.living_room
+    # - media_player.sony_bravia_tv
+    # - media_player.apple_tv
+    - camera.living_room
+    
+bedroom:
+  name: "Eric's Room"
+  view: yes
+  entities:
+    - media_player.erics_room_apple_tv
+ 
+
+overrides:
+  name: overrides
+  view: yes
+  entities:
+    - input_boolean.sleepy_time_override
+    - input_boolean.remote_garage_override
+    - input_boolean.away_override
+    - input_slider.sleepy_time_temperature
+    - group.restarts
+    - group.notifications
+    - input_boolean.hass_backup
+    - group.delegates
+    - automation.dim_kitchen_lights_as_midnight

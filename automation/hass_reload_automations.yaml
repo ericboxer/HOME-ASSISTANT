@@ -1,0 +1,14 @@
+- alias: Reload_automation
+  trigger:
+    platform: state
+    entity_id: input_boolean.reload_automation
+    from: "off"
+    to: "on"
+  action:
+    - service: notify.telegram
+      data:
+        title: ''
+        message: 'Home Assistant is now reloading automations.'
+    - service: automation.reload
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.reload_automation

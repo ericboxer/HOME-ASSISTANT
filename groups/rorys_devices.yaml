@@ -1,0 +1,7 @@
+# .:: Rorys Devices Stats ::.
+people_rory:
+  name: 'Rory'
+  view: no
+  entities:
+    - device_tracker.rorysiphone
+    - device_tracker.20c9d0b0b743

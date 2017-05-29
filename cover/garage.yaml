@@ -1,0 +1,12 @@
+# .:: Garage Door ::.
+
+- platform: mqtt
+  name: garage_door
+  state_topic: "boxhouse/garage/door"
+  command_topic: "boxhouse/garage/door/set"
+  qos: 1
+  state_open: "open"
+  state_closed: "closed"
+  payload_open: "acme_postcard_demean"
+  payload_close: "acme_postcard_demean"
+  retain: true

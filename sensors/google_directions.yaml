@@ -1,0 +1,28 @@
+- platform: google_travel_time
+  name: 'eric_to_maingate'
+  api_key: !secret google_api_key
+  origin: device_tracker.urtqwkbs_phoney
+  destination: zone.maingate
+
+- platform: google_travel_time
+  name: 'eric_to_home'
+  api_key: !secret google_api_key
+  origin: device_tracker.urtqwkbs_phoney
+  destination: zone.home
+
+- platform: google_travel_time
+  name: "eric_to_jerseys"
+  api_key: !secret google_api_key
+  origin: device_tracker.urtqwkbs_phoney
+  destination: zone.jersey
+
+- platform: google_travel_time
+  name: "eric_to_mco"
+  api_key: !secret google_api_key
+  origin: device_tracker.urtqwkbs_phoney
+  destination: zone.mco
+  
+    
+    # api_key: AIzaSyBZl-j0jInaYEbt-U-HfAafhDnQrGB4WW8
+    # origin: 'place_id:ChIJsaL5hLx-3YgRGAaGtxg-xOA'
+    # destination: 'place_id:ChIJc-ejP9V83YgRGZIJGvNtqpc'

@@ -1,0 +1,14 @@
+- alias: Someone is home
+  trigger:
+    - platform: state
+      entity_id: group.people
+      state: 'home'
+    - platform: state
+      entity_id: input_boolean.away_override
+      from: "on"
+      to: "off"
+  action:
+    - service: climate.set_away_mode
+      entity_id: climate.living_roomboxnest
+      data:
+        away_mode: 'False'

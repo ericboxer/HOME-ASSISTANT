@@ -1,0 +1,20 @@
+# .:: Check the internet speeds. Doesnt seem to be accurate ::.
+# Check speeds every 30 minutes
+- platform: speedtest
+  minute: 
+    - 00
+    # - 05
+    # - 10
+    # - 15
+    # - 20
+    # - 25
+    - 30
+    # - 35
+    # - 40
+    # - 45
+    # - 50
+    # - 55
+  monitored_conditions:
+    # - ping
+    - download
+    - upload

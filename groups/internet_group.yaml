@@ -1,0 +1,7 @@
+# .:: Internet stats ::.
+internet:
+  view: no
+  entities:
+    - sensor.speedtest_ping
+    - sensor.speedtest_download
+    - sensor.speedtest_upload

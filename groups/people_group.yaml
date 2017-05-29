@@ -1,0 +1,7 @@
+# .:: Occupancy tracking ::.
+people:
+  name: "Who's Home"
+  view: no
+  entities:
+    - group.people_eric
+    - group.people_rory

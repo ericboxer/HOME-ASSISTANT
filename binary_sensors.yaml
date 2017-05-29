@@ -1,0 +1,34 @@
+# .:: MQTT Variable Storage ::.
+
+- platform: mqtt
+    name: Garage Door
+    state_topic: 'boxhouse/garage/door'
+    payload_on: 'open'
+    payload_off: 'closed'
+
+
+- platform: mqtt
+    name: Sleep Time Override
+    state_topic: 'boxhouse/variable/sleepy_time_override'
+    payload_on: 'on'
+    payload_off: 'off'
+
+
+
+- platform: mqtt
+    name: 'Remote Garage Trigger'
+    state_topic: 'boxhouse/variable/remote_garage'
+    payload_on: 'on'
+    payload_off: 'off'
+
+- platform: mqtt
+    name: restart_notification
+    state_topic: 'boxhouse/variable/restart_notification'
+    payload_on: 'on'
+    payload_off: 'off'
+
+- platform: mqtt
+    name: startup_notification
+    state_topic: 'boxhouse/variable/startup_notification'
+    payload_on: 'on'
+    payload_off: 'off'

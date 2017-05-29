@@ -1,0 +1,60 @@
+
+
+restart_ha:
+  name: 'Restart HA'
+  initial: off
+
+reload_core:
+  name: 'Reload Core'
+  initial: off
+
+reload_automation:
+  name: 'Reload Automations'
+  initial: off
+
+reload_groups:
+  name: 'Reload Groups'
+  initial: off
+
+hass_backup:
+  name: 'HASS Backup'
+  initial: off
+
+# .:: Overrides ::.
+sleepy_time_override:
+  name: 'Sleepy Time Override'
+  initial: off
+
+remote_garage_override:
+  name: 'Remote Garage Override'
+  initial: off
+
+# .:: visusals ::.
+sleepy_time_running:
+  name: 'Sleepy Time'
+
+
+# .:: Testings ::.
+away_override:
+    name: "Away Override"
+    initial: off
+
+# .:: Notifications ::.
+startup_notification:
+    name: 'startup_notification'
+
+restart_notification:
+    name: 'restart_notification'
+
+random_lights:
+    name: 'random_lights'
+
+# .:: Delegates ::.
+
+dusk_trigger:
+  name: 'Dusk Trigger'
+  initial: off
+
+cooking_trigger:
+  name: 'Dusk Trigger'
+  initial: off

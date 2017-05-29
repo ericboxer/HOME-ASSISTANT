@@ -1,0 +1,539 @@
+
+boxhous:
+  name: 'boxho.us'
+  mac: A8:86:DD:A9:BE:31
+  picture: 
+  track: no
+  hide_if_away: no
+
+09b0dd259a:
+  name: 'Onkyo'
+  mac: 0:9:B0:DD:25:9A
+  picture: 
+  track: no
+  hide_if_away: no
+
+18fe34db5354:
+  name: 'Garage Trigger'
+  mac: 18:FE:34:DB:53:54
+  picture: 
+  track: yes
+  hide_if_away: no
+
+01ff3bfaf1:
+  name: 01ff3bfaf1
+  mac: 0:1F:F3:BF:AF:1
+  picture: 
+  track: no
+  hide_if_away: no
+
+18b43052e39f:
+  name: 18b43052e39f
+  mac: 18:B4:30:52:E3:9F
+  picture: 
+  track: no
+  hide_if_away: no
+
+cfe4513813a:
+  name: cfe4513813a
+  mac: C:FE:45:13:81:3A
+  picture: 
+  track: no
+  hide_if_away: no
+
+boxhous_2:
+  name: boxho.us
+  mac: 68:5B:35:BB:F6:93
+  picture: 
+  track: no
+  hide_if_away: no
+
+c869cd2aba63:
+  name: c869cd2aba63
+  mac: C8:69:CD:2A:BA:63
+  picture: 
+  track: no
+  hide_if_away: no
+
+lappy:
+  name: 'Lappy'
+  mac: 78:31:C1:B8:2:82
+  picture: 
+  track: yes
+  hide_if_away: no
+
+5855cae59e4:
+  name: 5855cae59e4
+  mac: 58:55:CA:E:59:E4
+  picture: 
+  track: no
+  hide_if_away: no
+
+f099bf1ef7e:
+  name: f099bf1ef7e
+  mac: F0:99:BF:1:EF:7E
+  picture: 
+  track: no
+  hide_if_away: no
+
+18b43052e3c:
+  name: 18b43052e3c
+  mac: 18:B4:30:52:E3:C
+  picture: 
+  track: no
+  hide_if_away: no
+
+# phoney:
+#   name: 'phoney'
+#   mac: E4:9A:79:6E:B2:E9
+#   picture: 
+#   track: yes
+#   hide_if_away: no
+
+thermostatboxhous:
+  name: thermostat.boxho.us
+  mac: 18:B4:30:29:B5:3E
+  picture: 
+  track: yes
+  hide_if_away: no
+
+rorysiphone-old:
+  name: "rorysiphone-old"
+  mac: DC:2B:2A:A1:7:D8
+  picture: 
+  track: yes
+  hide_if_away: no
+
+wwam04043356:
+  name: WW-AM04043356
+  mac: 
+  picture: 
+  track: yes
+  hide_if_away: no
+
+boxhouseserver:
+  name: Boxhouse Server
+  mac: 
+  picture: 
+  track: no
+  hide_if_away: no
+
+ericsapplewatch:
+  name: 'Eric’s Apple Watch'
+  mac: 08:66:98:84:35:38
+  picture: 
+  track: yes
+  hide_if_away: no
+
+boxpadmini:
+  name: 'Boxpad Mini'
+  mac: 6C:40:8:D0:97:17
+  picture: 
+  track: yes
+  hide_if_away: no
+  
+605bb41bbde7:
+  name: 605bb41bbde7
+  mac: 60:5B:B4:1B:BD:E7
+  picture: 
+  track: no
+  hide_if_away: no
+
+4c348861da5:
+  name: 4c348861da5
+  mac: 4C:34:88:6:1D:A5
+  picture: 
+  track: no
+  hide_if_away: no
+
+20f85ed1914:
+  name: 20f85ed1914
+  mac: 20:F8:5E:D1:91:4
+  picture: 
+  track: no
+  hide_if_away: no
+
+5cf5da83f575:
+  name: 5cf5da83f575
+  mac: 5C:F5:DA:83:F5:75
+  picture: 
+  track: no
+  hide_if_away: no
+
+88871716c176:
+  name: 88871716c176
+  mac: 88:87:17:16:C1:76
+  picture: 
+  track: no
+  hide_if_away: no
+
+20c9d0b0b743:
+  name: 20c9d0b0b743
+  mac: 20:C9:D0:B0:B7:43
+  picture: 
+  track: yes
+  hide_if_away: no
+
+985fd33a62d9:
+  name: 985fd33a62d9
+  mac: 98:5F:D3:3A:62:D9
+  picture: 
+  track: no
+  hide_if_away: no
+
+0b869ee3aa:
+  name: 0b869ee3aa
+  mac: 0:B:86:9E:E3:AA
+  picture: 
+  track: yes
+  hide_if_away: no
+
+2cf0a25c6fdf:
+  name: 2cf0a25c6fdf
+  mac: 2C:F0:A2:5C:6F:DF
+  picture: 
+  track: yes
+  hide_if_away: no
+
+c0f2fb4b1539:
+  name: c0f2fb4b1539
+  mac: C0:F2:FB:4B:15:39
+  picture: 
+  track: yes
+  hide_if_away: no
+
+b05941eb235:
+  name: b05941eb235
+  mac: B0:5:94:1E:B2:35
+  picture: 
+  track: yes
+  hide_if_away: no
+
+fce9981741c:
+  name: fce9981741c
+  mac: FC:E9:98:1:74:1C
+  picture: 
+  track: yes
+  hide_if_away: no
+
+1c5cf29fb39:
+  name: 1c5cf29fb39
+  mac: 1C:5C:F2:9:FB:39
+  picture: 
+  track: yes
+  hide_if_away: no
+
+5cadcfe26b72:
+  name: 5cadcfe26b72
+  mac: 5C:AD:CF:E2:6B:72
+  picture: 
+  track: yes
+  hide_if_away: no
+
+1c5cf21c4f57:
+  name: 1c5cf21c4f57
+  mac: 1C:5C:F2:1C:4F:57
+  picture: 
+  track: yes
+  hide_if_away: no
+
+28a02bee139e:
+  name: 28a02bee139e
+  mac: 28:A0:2B:EE:13:9E
+  picture: 
+  track: yes
+  hide_if_away: no
+
+02315ca210:
+  name: 02315ca210
+  mac: 0:23:15:CA:21:0
+  picture: 
+  track: yes
+  hide_if_away: no
+
+80be5b1eeff:
+  name: 80be5b1eeff
+  mac: 80:BE:5:B1:EE:FF
+  picture: 
+  track: yes
+  hide_if_away: no
+
+b827eb757e6b:
+  hide_if_away: false
+  mac: B8:27:EB:75:7E:6B
+  name: b827eb757e6b
+  picture:
+  track: true
+  vendor:
+
+5855ca0e59e4:
+  hide_if_away: false
+  mac: 58:55:CA:0E:59:E4
+  name: 5855ca0e59e4
+  picture:
+  track: true
+  vendor:
+
+f099bf01ef7e:
+  hide_if_away: false
+  mac: F0:99:BF:01:EF:7E
+  name: f099bf01ef7e
+  picture:
+  track: true
+  vendor:
+
+lappyboxhous:
+  hide_if_away: false
+  mac: 78:31:C1:B8:02:82
+  name: lappy.boxho.us
+  picture:
+  track: true
+  vendor:
+
+0009b0dd259a:
+  hide_if_away: false
+  mac: 00:09:B0:DD:25:9A
+  name: 0009b0dd259a
+  picture:
+  track: true
+  vendor:
+
+001ff3bfaf01:
+  hide_if_away: false
+  mac: 00:1F:F3:BF:AF:01
+  name: 001ff3bfaf01
+  picture:
+  track: true
+  vendor:
+
+18b43052e30c:
+  hide_if_away: false
+  mac: 18:B4:30:52:E3:0C
+  name: 18b43052e30c
+  picture:
+  track: true
+  vendor:
+
+001132660a43:
+  hide_if_away: false
+  mac: 00:11:32:66:0A:43
+  name: 001132660a43
+  picture:
+  track: true
+  vendor:
+
+urtqwkbs_phoney:
+  hide_if_away: false
+  mac: E4:9A:79:6E:B2:E9
+  name: urtqwkbs
+  picture:
+  track: true
+  vendor:
+
+boxhousecflrrcom:
+  hide_if_away: false
+  mac: 60:38:E0:B7:8F:B8
+  name: Boxhouse.cfl.rr.com
+  picture:
+  track: true
+  vendor:
+
+dc2b2aa107d8:
+  hide_if_away: false
+  mac: DC:2B:2A:A1:07:D8
+  name: dc2b2aa107d8
+  picture:
+  track: true
+  vendor:
+
+000b869ee3aa:
+  hide_if_away: false
+  mac: 00:0B:86:9E:E3:AA
+  name: 000b869ee3aa
+  picture:
+  track: true
+  vendor:
+
+b005941eb235:
+  hide_if_away: false
+  mac: B0:05:94:1E:B2:35
+  name: b005941eb235
+  picture:
+  track: true
+  vendor:
+
+4c3488061da5:
+  hide_if_away: false
+  mac: 4C:34:88:06:1D:A5
+  name: 4c3488061da5
+  picture:
+  track: true
+  vendor:
+
+f4f5d8a245d4:
+  hide_if_away: false
+  mac: F4:F5:D8:A2:45:D4
+  name: f4f5d8a245d4
+  picture:
+  track: true
+  vendor:
+
+00e04c680479:
+  hide_if_away: false
+  mac: 00:E0:4C:68:04:79
+  name: 00e04c680479
+  picture:
+  track: true
+  vendor:
+
+6c4008d09717:
+  hide_if_away: false
+  mac: 6C:40:08:D0:97:17
+  name: 6c4008d09717
+  picture:
+  track: true
+  vendor:
+
+a467064a0972:
+  hide_if_away: false
+  mac: A4:67:06:4A:09:72
+  name: a467064a0972
+  picture:
+  track: true
+  vendor:
+
+803f5d0a4917:
+  hide_if_away: false
+  mac: 80:3F:5D:0A:49:17
+  name: 803f5d0a4917
+  picture:
+  track: true
+  vendor:
+
+38cadaeadd6c:
+  hide_if_away: false
+  mac: 38:CA:DA:EA:DD:6C
+  name: 38cadaeadd6c
+  picture:
+  track: true
+  vendor:
+
+90cdb64bf391:
+  hide_if_away: false
+  mac: 90:CD:B6:4B:F3:91
+  name: 90cdb64bf391
+  picture:
+  track: true
+  vendor:
+
+086698cd4bc9:
+  hide_if_away: false
+  mac: 08:66:98:CD:4B:C9
+  name: 086698cd4bc9
+  picture:
+  track: true
+  vendor:
+
+18f643765f50:
+  hide_if_away: false
+  mac: 18:F6:43:76:5F:50
+  name: 18f643765f50
+  picture:
+  track: true
+  vendor:
+
+0cfe4513813a:
+  hide_if_away: false
+  mac: 0C:FE:45:13:81:3A
+  name: 0cfe4513813a
+  picture:
+  track: true
+  vendor:
+
+a020a60a9690:
+  hide_if_away: false
+  mac: A0:20:A6:0A:96:90
+  name: a020a60a9690
+  picture:
+  track: true
+  vendor: Espressif Inc.
+
+rorysiphone:
+  hide_if_away: false
+  mac: 84:A1:34:DB:64:18
+  name: "rorysiphone"
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+0056cd6dd891:
+  hide_if_away: false
+  mac: 00:56:CD:6D:D8:91
+  name: 0056cd6dd891
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+9801a73f247f:
+  hide_if_away: false
+  mac: 98:01:A7:3F:24:7F
+  name: 9801a73f247f
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+0866988463bb:
+  hide_if_away: false
+  mac: 08:66:98:84:63:BB
+  name: 0866988463bb
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+a06391959a4b:
+  hide_if_away: false
+  mac: A0:63:91:95:9A:4B
+  name: a06391959a4b
+  picture:
+  track: true
+  vendor: NETGEAR
+
+60f189ac65f5:
+  hide_if_away: false
+  mac: 60:F1:89:AC:65:F5
+  name: 60f189ac65f5
+  picture:
+  track: true
+  vendor: Murata Manufacturing Co., Ltd.
+
+784f4393bdc4:
+  hide_if_away: false
+  mac: 78:4F:43:93:BD:C4
+  name: 784f4393bdc4
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+021cc222fa74:
+  hide_if_away: false
+  mac: 02:1C:C2:22:FA:74
+  name: 021cc222fa74
+  picture:
+  track: true
+  vendor: unknown
+
+708bcdcf0680:
+  hide_if_away: false
+  mac: 70:8B:CD:CF:06:80
+  name: 708bcdcf0680
+  picture:
+  track: true
+  vendor: ASUSTek COMPUTER INC.
+
+hostone:
+  hide_if_away: false
+  mac:
+  name: hostone
+  picture:
+  track: true
+  vendor:

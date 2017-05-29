@@ -1,0 +1,24 @@
+# .:: Proch lights timer ::.
+
+# - alias: 'Lights off at sunrise'
+#   trigger:
+#     platform: state
+#     entity_id: input_boolean.dusk_trigger
+#   action:
+#     service: notify.telegram
+#     data:
+#       message: 'The sun is up.'
+# - alias: 'Lights on at dusk'
+#   trigger:
+#     platform: sun
+#     event: sunset
+#     offset: '-01:00:00'
+#   action:
+#     - service: notify.telegram
+#       data:
+#         message: "It's getting dark"
+#     - service: light.turn_on
+#       data:
+#         entity_id: group.kitchen_lights
+#         brightness: 100
+#         transition: 3

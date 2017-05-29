@@ -1,0 +1,7 @@
+# .:: Old login style ::.
+# username: !secret nest_user
+# password: !secret nest_password
+
+# # .:: new login style ::.
+client_id: !secret nest_clientID
+client_secret: !secret nest_product_secret

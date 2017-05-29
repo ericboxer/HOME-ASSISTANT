@@ -1,0 +1,27 @@
+- alias: 'Remote Garage Override Storage'
+  trigger:
+    - platform: state
+      entity_id: input_boolean.remote_garage_override
+  # condition:
+  #   - condition: template
+  #     value_template: "{{ not is_state('input_boolean.remote_garage_override', states('binary_sensor.remote_garage_override')) }}"
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: 'boxhouse/variable/remote_garage_override'
+        payload: "{{ states('input_boolean.remote_garage_override') }}"
+        retain: true
+        qos: 0
+
+- alias: 'Update Remote Garage Update'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.remote_garage_override
+    - platform: event
+      event_type: homeassistant_start
+  condition:
+    - condition: template
+      value_template: "{{ not is_state('input_boolean.remote_garage_override', states('binary_sensor.remote_garage_override')) }}"
+  action:
+    - service_template: "input_boolean.turn_{{ 'on' if is_state('binary_sensor.remote_garage_override', 'on') else 'off' }}"
+      entity_id: input_boolean.remote_garage_override

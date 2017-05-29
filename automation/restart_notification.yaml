@@ -1,0 +1,27 @@
+- alias: Store restart Notification Status
+  trigger:
+    - platform: state
+      entity_id: input_boolean.restart_notification
+  # condition:
+    # - condition: template
+    #   value_template: "{{ not is_state('input_boolean.restart_notification', states('binary_sensor.override_restart_notification')) }}"
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: 'boxhouse/variable/restart_notification'
+        payload: "{{ states('input_boolean.restart_notification') }}"
+        retain: true
+        qos: 1
+
+- alias: Update restart notifcaiton Status
+  trigger:
+    - platform: state
+      entity_id: sensor.override_restart_notification
+    - platform: event
+      event_type: homeassistant_start
+  condition:
+    - condition: template
+      value_template: "{{ not is_state('input_boolean.restart_notification', states('sensor.override_restart_notification')) }}"
+  action:
+    - service_template: "input_boolean.turn_{{ 'on' if is_state('sensor.override_restart_notification', 'on') else 'off' }}"
+      entity_id: input_boolean.restart_notification

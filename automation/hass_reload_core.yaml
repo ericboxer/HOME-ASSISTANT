@@ -1,0 +1,14 @@
+- alias: Reload_core
+  trigger:
+    platform: state
+    entity_id: input_boolean.reload_core
+    from: "off"
+    to: "on"
+  action:
+    - service: notify.telegram
+      data:
+        title: ''
+        message: 'Home Assistant is now reloading.'
+    - service: homeassistant.reload_core_config
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.reload_core

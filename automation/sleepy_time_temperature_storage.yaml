@@ -1,0 +1,14 @@
+- alias: Store Sleepy Time Temperature
+  trigger:
+    - platform: state
+      entity_id: input_slider.sleepy_time_temperature
+  # condition:
+  #   - condition: template
+  #     value_template: "{{ not is_state('input_slider.sleepy_time_temperature', states('sensor.sleepy_time_temperature')) }}"
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: 'boxhouse/variable/sleepy_time_temperature'
+        payload_template: "{{ states('input_slider.sleepy_time_temperature') }}"
+        retain: true
+        qos: 1

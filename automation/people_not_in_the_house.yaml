@@ -1,0 +1,29 @@
+# # .:: Sets the house up if no one is home. Changes the thermostat to away, turns on music for the pup ::.
+# - alias: No one is home
+#   trigger:
+#     - platform: state
+#       entity_id: group.people
+#       state: 'not_home'
+#       for:
+#         minutes: 15
+#     - platform: state
+#       entity_id: input_boolean.away_override
+#       from: "off"
+#       to: "on"
+#   action:
+#     - service: climate.set_away_mode
+#       entity_id: climate.living_roomboxnest
+#       data:
+#         away_mode: 'True'
+#     - service: scene.turn_on       # this isnt working for some reason
+#       entity_id: scene.no_one_home # this isnt working for some reason
+#     - service: media_player.turn_on
+#       entity_id: media_player.living_room
+#     - service: media_player.volume_set
+#       entity_id: media_player.living_room
+#       data:
+#         volume_level: ".3"
+#     - service: media_player.select_source
+#       entity_id: media_player.living_room
+#       data:
+#         source: 'FM Radio'

@@ -1,0 +1,9 @@
+- alias: Startup Notification
+  trigger:
+    platform: event
+    event_type: homeassistant_start
+  action:
+    service: notify.telegram
+    data:
+      title: ''
+      message: 'Home Assistant is now up and running.'

@@ -1,0 +1,81 @@
+# General Timers
+
+- alias: 'Lights on at dusk'
+  trigger:
+    platform: sun
+    event: sunset
+    offset: '-00:30:00'
+    # platform: state
+    # entity_id: input_boolean.dusk_trigger
+    # from: 'off'
+    # to: 'on'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: group.kitchen_lights
+        brightness: 100
+        transition: 3
+
+- alias: 'Dim kitchen lights as midnight'
+  trigger:
+    platform: time
+    after: '00:00:00'
+  # condition:
+  #   condition: and
+  #   conditions:
+  #     - condition: state
+  #       entity_id: input_boolean.dusk_trigger
+  #       state: 'on' 
+  #     - condition: state
+  #       entity_id: input_boolean.cooking_trigger
+  #       state: 'off' 
+  action:
+    service: light.turn_on
+    data:
+      brightness: 5
+      transition: 3
+      entity_id: group.kitchen_lights
+
+- alias: 'Turn lights off at sunrise'
+  trigger:
+    platform: sun
+    event: sunrise
+    # platform: state
+    # entity_id: input_boolean.dusk_trigger
+    # from: 'on'
+    # to: 'off'
+  action:
+    service: light.turn_off
+    data:
+      entity_id: group.kitchen_lights
+
+
+# Cooking Settings
+
+# - alias: 'Food Prep'
+#   trigger:
+#     platform: sun
+#     event: sunset
+#     offset: '-01:00:00'
+#   action:
+#     - service: notify.telegram
+#       data:
+#         message: "It's getting dark"
+#     - service: light.turn_on
+#       data:
+#         entity_id: group.kitchen_lights
+#         brightness: 120
+#         transition: 3
+
+# - alias: 'Done cooking'
+#   trigger:
+#     platform: time
+#     hours: 0
+#     minutes: 0
+#     seconds: 0
+#   action:
+#     service: light.turn_on
+#     data:
+#       brightness: 20
+#       transition: 3
+#       entity_id: group.kitchen_lights

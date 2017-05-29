@@ -1,0 +1,9 @@
+# .:: Travel Times ::.
+erics_travel_times:
+  name: Erics Travel Times
+  view: no
+  entities:
+    - sensor.eric_to_home
+    - sensor.eric_to_maingate
+    - sensor.eric_to_jerseys
+    - sensor.eric_to_mco

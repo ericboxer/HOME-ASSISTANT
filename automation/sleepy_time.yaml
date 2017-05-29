@@ -1,0 +1,46 @@
+- alias: Sleepy time
+  trigger:
+    platform: state
+    entity_id: group.people
+    state: 'home'
+  condition:
+    - condition: time
+      after: '22:00'
+      before: '06:30'
+    - condition: state
+      entity_id: sensor.override_sleepy_time_override
+      state: 'off'
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.living_roomboxnest
+      data:
+        temperature: 74 # "{{ states('sensor.override_sleepy_time_temperature')}}"
+
+
+- alias: Store Sleepy Time Status
+  trigger:
+    - platform: state
+      entity_id: input_boolean.sleepy_time_override
+  # condition:
+    # - condition: template
+    #   value_template: "{{ not is_state('input_boolean.sleepy_time_override', states('binary_sensor.override_sleepy_time_override')) }}"
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: 'boxhouse/variable/sleepy_time_override'
+        payload: "{{ states('input_boolean.sleepy_time_override') }}"
+        retain: true
+        qos: 1
+
+- alias: Update Sleepy Time Status
+  trigger:
+    - platform: state
+      entity_id: sensor.override_sleepy_time_override
+    - platform: event
+      event_type: homeassistant_start
+  condition:
+    - condition: template
+      value_template: "{{ not is_state('input_boolean.sleepy_time_override', states('sensor.override_sleepy_time_override')) }}"
+  action:
+    - service_template: "input_boolean.turn_{{ 'on' if is_state('sensor.override_sleepy_time_override', 'on') else 'off' }}"
+      entity_id: input_boolean.sleepy_time_override

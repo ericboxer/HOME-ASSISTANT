@@ -1,0 +1,9 @@
+# .:: Manual Restarts ::.
+restarts:
+  name: restarts
+  view: no
+  entities:
+    - input_boolean.restart_ha
+    - input_boolean.reload_core
+    - input_boolean.reload_groups
+    - input_boolean.reload_automation
